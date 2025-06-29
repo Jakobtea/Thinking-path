@@ -1,0 +1,99 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Layout and Typography */
+body {
+  font-family: 'Helvetica Neue', system-ui, sans-serif;
+  background-color: #f9f9f9;
+  color: #2e2e2e;
+  line-height: 1.8;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+header, footer {
+  background-color: #ffffff;
+  padding: 4rem 2rem;
+  text-align: center;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+header h1 {
+  font-size: 2rem;
+  letter-spacing: 0.05em;
+  color: #444;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #777;
+  margin-top: 0.5rem;
+}
+
+main {
+  max-width: 700px;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+}
+
+.post-link {
+  margin-bottom: 3.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+}
+
+.post-link h2 {
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+}
+
+.post-link time {
+  display: block;
+  font-size: 0.85rem;
+  color: #aaa;
+  margin-bottom: 0.7rem;
+}
+
+.post-link p {
+  font-size: 1.05rem;
+  color: #555;
+}
+
+a {
+  color: #6a7a8d;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #4a5a6d;
+  text-decoration: underline;
+}
+
+footer {
+  font-size: 0.9rem;
+  color: #888;
+  border-top: 1px solid #eee;
+  margin-top: 4rem;
+}
+
+footer a {
+  color: #999;
+}
+
+footer a:hover {
+  color: #666;
+}
+
+/* Optional: Smooth font rendering */
+body, button, input, textarea {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

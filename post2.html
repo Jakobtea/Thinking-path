@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Why I Built This Blog</title>
+  <link rel="stylesheet" href="post2.css" />
+</head>
+<body>
+  <header>
+    <h1>The Thinking Path</h1>
+    <p>Thoughts and explorations</p>
+  </header>
+
+  <main>
+    <article>
+      <header>
+        <h2>Why I Built This Blog</h2>
+        <time datetime="2025-06-25">June 25, 2025</time>
+      </header>
+
+      <section>
+        <p>
+          Did you know that you can create perfect fractal patterns by repeatedly following a few random rules? I recently discovered this through a fascinating video about the Sierpiński triangle and the <em>Chaos Game</em> that sparked my interest.
+        </p>
+
+        <p>
+          Fractals are structures that are still detailed at small scales… a kind of rough geometry. But when most people speak of fractals, they mean self-similar shapes—patterns that repeat at different scales. So you can zoom in but still see the whole shape.
+        </p>
+
+        <p>
+          Want to know more? Watch this video: <a href="https://www.youtube.com/watch?v=gB9n2gHsHN4">Sierpiński & the Chaos Game</a><br>
+          Or read: <a href="https://en.wikipedia.org/wiki/Sierpi%C5%84ski_triangle">Wikipedia: Sierpiński triangle</a>
+        </p>
+
+        <p>The process is surprisingly simple:</p>
+
+        <ul>
+          <li>Start with an equilateral triangle and place a random point inside it.</li>
+          <li>Randomly pick one of the triangle’s three vertices.</li>
+          <li>Plot a new point halfway between the current point and that vertex.</li>
+          <li>Repeat the last two steps thousands of times.</li>
+        </ul>
+
+        <p>A fractal pattern will emerge:</p>
+
+        <figure>
+          <img src="images/Chaos_Game_1.png" alt="1,000 points Chaos Game" />
+          <figcaption>After 1,000 points: the pattern begins to take shape.</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/Chaos_Game_2.png" alt="10,000 points Chaos Game" />
+          <figcaption>After 10,000 points: a perfect Sierpiński triangle.</figcaption>
+        </figure>
+
+        <p>
+          I was hooked. What would happen if I changed two simple things?
+        </p>
+
+        <ol>
+          <li><strong>The step</strong> – how far the point moves toward the vertex (e.g. 0.5 = halfway).</li>
+          <li><strong>The number of vertices</strong> – not just 3, but 4, 5, or more.</li>
+        </ol>
+
+        <p>
+          To explore this, I wrote a Python script using matplotlib. A day later, I had a working website and a simulator.
+          I labeled each result with the format <code>S;V</code> – step size and number of vertices.
+        </p>
+
+        <figure>
+          <img src="images/Chaos_Game_6.png" alt="Fractal S=1.5, V=3" />
+          <figcaption><strong>1.5;3</strong> — One step past Sierpiński. Unexpected behavior emerges.</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/Chaos_Game_4.png" alt="Fractal S=0.6, V=4" />
+          <figcaption><strong>0.6;4</strong> — A classic example of self-similarity.</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/Chaos_Game_3.png" alt="Fractal S=1.4, V=5" />
+          <figcaption><strong>1.4;5</strong> — Almost circular. Very different from the triangle pattern.</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/Chaos_Game_5.png" alt="Fractal S=0.6, V=5" />
+          <figcaption><strong>0.6;5</strong> — A flipped pentagon emerges in the center.</figcaption>
+        </figure>
+
+        <p>
+          I noticed a consistent pattern: when S is between <strong>0.5 and 0.8</strong>, self-similar fractals tend to form—regardless of the number of vertices.
+        </p>
+
+        <p>
+          That makes intuitive sense: at S = 1, you're just hitting the vertex. But as S decreases, a structure forms through avoidance.
+        </p>
+
+        <p>
+          I might write another post diving deeper into the math. For now, try the simulator:
+          <a href="https://jakobtea.github.io/Chaos-game/">Chaos Game Simulator</a>
+        </p>
+
+        <p>
+          If you find interesting patterns—especially ones without a central void or with strange symmetry—drop a comment.
+        </p>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    © 2025 My Blog — <a href="https://github.com/yourusername">GitHub</a>
+  </footer>
+</body>
+</html>
