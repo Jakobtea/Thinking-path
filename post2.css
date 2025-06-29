@@ -99,3 +99,18 @@ footer {
   color: #aaa;
   border-top: 1px solid #ddd;
 }
+
+nav.breadcrumb {
+  margin-bottom: 1.5rem;
+}
+
+nav.breadcrumb a {
+  text-decoration: none;
+  color: #3366cc;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+nav.breadcrumb a:hover {
+  text-decoration: underline;
+}
